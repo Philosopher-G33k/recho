@@ -25,5 +25,5 @@ impl Config {
 
 pub fn run(config: Config) {
     let echo_string = config.args.join(" ");
-    print!("{echo_string}");
+    println!("{echo_string}");
 }
