@@ -16,7 +16,7 @@ impl Config {
                 i = i+1;
                 continue;
             }
-            contents.insert(contents.len(), content.clone());
+            contents.push(content.clone());
         }
         
         Ok(Config { args: contents })
