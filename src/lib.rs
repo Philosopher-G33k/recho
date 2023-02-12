@@ -10,15 +10,9 @@ impl Config {
         }
 
         let mut contents: Vec<String> = vec![];
-        let mut i = 0;
         for content in args {
-            if i == 0 {
-                i = i+1;
-                continue;
-            }
             contents.push(content.clone());
         }
-        
         Ok(Config { args: contents })
     }
 }
